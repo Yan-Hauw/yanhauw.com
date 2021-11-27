@@ -1,29 +1,20 @@
-import React from "react";
+// types
+import { project } from "../../types/projects-section";
 
 // components
 import ProjectBox from "../ProjectBox";
+
+// constants
+import { projects } from "../../constants/projects";
 
 // styles
 import styles from "./index.module.css";
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "Bruinwalk Scraper",
-      stacks: ["Python", "MongoDB"],
-      description: "A web scraper for scraping bruinwalk.com",
-    },
-    {
-      title: "yanhauw.com",
-      stacks: ["TypeScript", "CSS"],
-      description: "My personal website",
-    },
-  ];
-
   return (
     <div id="projectssection" className={styles.container}>
       <div>
-        {projects.map((project, index) => (
+        {projects.map((project: project, index: number) => (
           <ProjectBox
             title={project.title}
             stacks={project.stacks}

@@ -1,6 +1,5 @@
 // types
 import type { NextPage } from "next";
-import { project } from "../types/projects-section";
 
 // components
 import NextHead from "../components/NextHead";
