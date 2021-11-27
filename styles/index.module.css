@@ -1,7 +1,29 @@
 .container {
-  padding: 0 2rem;
-  background-color: blue;
-  height: 50px;
-  width: 50px;
-  margin: 25px auto 25px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 100px;
+  width: 300px;
+  margin: 300px auto 25px;
+  display: flex;
+  padding: 10px;
+}
+
+.photoFrame {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileText {
+  margin: 0 10px;
+}
+
+.fullName {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 0;
 }
