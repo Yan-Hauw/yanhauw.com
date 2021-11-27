@@ -1,0 +1,39 @@
+.projectBox {
+  width: 384px;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.projectCover {
+  width: 384px;
+  height: 192px;
+  background-color: purple;
+}
+
+.details {
+  padding: 0 16px;
+}
+
+.projectTitle {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.techStacks {
+  display: flex;
+}
+
+.technology {
+  background-color: lightblue;
+  color: black;
+  font-size: 12px;
+  margin-right: 5px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.description {
+  font-size: 16px;
+}

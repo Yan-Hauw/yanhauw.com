@@ -1,29 +1,45 @@
 // types
 import type { NextPage } from "next";
-
-//images
-import Bottle from "../public/Bottle.jpeg";
-
-// next
-import Image from "next/image";
+import { project } from "../types/projects-section";
 
 // components
 import NextHead from "../components/NextHead";
+import ProfileSection from "../components/ProfileSection";
+import ProjectBox from "../components/ProjectBox";
 
 // styles
-import styles from "../styles/index.module.css";
+import styles from "../components/ProjectsSection/index.module.css";
 
 const Home: NextPage = () => {
+  const projects = [
+    {
+      title: "Bruinwalk Scraper",
+      stacks: ["Python", "MongoDB"],
+      description: "A web scraper for scraping bruinwalk.com",
+    },
+    {
+      title: "yanhauw.com",
+      stacks: ["TypeScript", "CSS"],
+      description: "My personal website",
+    },
+  ];
+
   return (
     <>
       <NextHead />
-      <div className={styles.container}>
-        <div className={styles.photoFrame}>
-          <Image src={Bottle} alt="" height={78} width={78} />
-        </div>
-        <div className={styles.profileText}>
-          <h1 className={styles.fullName}>Yan Hauw</h1>
-          <p className={styles.description}>Junior CS major at UCLA</p>
+
+      <ProfileSection />
+
+      <div id="projectssection" className={styles.container}>
+        <div>
+          {projects.map((project, index) => (
+            <ProjectBox
+              title={project.title}
+              stacks={project.stacks}
+              description={project.description}
+              key={index}
+            />
+          ))}
         </div>
       </div>
     </>
