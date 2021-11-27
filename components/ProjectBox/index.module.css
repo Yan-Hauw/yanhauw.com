@@ -9,7 +9,6 @@
 .projectCover {
   width: 384px;
   height: 192px;
-  background-color: purple;
 }
 
 .details {
@@ -36,4 +35,24 @@
 
 .description {
   font-size: 16px;
+  border-bottom: 1px solid lightgray;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.links {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  font-size: 20px;
+  color: lightgray;
+  padding: 0 5px;
+}
+
+.link:hover {
+  color: black;
+  font-weight: 500;
 }

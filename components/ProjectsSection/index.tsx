@@ -15,12 +15,7 @@ const ProjectsSection = () => {
     <div id="projectssection" className={styles.container}>
       <div>
         {projects.map((project: project, index: number) => (
-          <ProjectBox
-            title={project.title}
-            stacks={project.stacks}
-            description={project.description}
-            key={index}
-          />
+          <ProjectBox project={project} key={index} />
         ))}
       </div>
     </div>
