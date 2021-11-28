@@ -12,13 +12,19 @@ import styles from "./index.module.css";
 
 const ProjectsSection = () => {
   return (
-    <div id="projectssection" className={styles.container}>
-      <div>
-        {projects.map((project: project, index: number) => (
-          <ProjectBox project={project} key={index} />
-        ))}
+    <>
+      <h1 id="projectssection" className={styles.header}>
+        Projects
+      </h1>
+
+      <div className={styles.container}>
+        <div>
+          {projects.map((project: project, index: number) => (
+            <ProjectBox project={project} key={index} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

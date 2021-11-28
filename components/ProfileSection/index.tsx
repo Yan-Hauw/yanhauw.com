@@ -16,8 +16,10 @@ const ProfileSection = () => {
         <div className={styles.photoFrame}>
           <Image src={Bottle} alt="" height={78} width={78} />
         </div>
+
         <div className={styles.profileText}>
           <h1 className={styles.fullName}>Yan Hauw</h1>
+
           <p className={styles.description}>Junior CS major at UCLA</p>
         </div>
       </div>
