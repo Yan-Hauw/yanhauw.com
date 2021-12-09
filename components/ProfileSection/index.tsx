@@ -26,7 +26,7 @@ const ProfileSection = () => {
         <div className={styles.profileText}>
           <h1 className={styles.fullName}>Yan Hauw</h1>
 
-          <p className={styles.description}>Junior CS major at UCLA</p>
+          <p className={styles.description}>Junior CS major at UCLA.</p>
         </div>
       </div>
     </div>
