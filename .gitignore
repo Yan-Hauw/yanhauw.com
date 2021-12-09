@@ -36,9 +36,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-
-# firebase
-.firebaserc
-
-# github workflows
-.github/
