@@ -9,6 +9,9 @@ import Image from "next/image";
 // styles
 import styles from "./index.module.css";
 
+const externaImageLoader = ({ src }: { src: string }) =>
+  `https://yanhauw.com/${src}`;
+
 interface props {
   project: project;
 }
@@ -17,7 +20,13 @@ const ProjectBox: React.FC<props> = ({ project }) => {
   return (
     <div className={styles.projectBox}>
       <div className={styles.projectCover}>
-        <Image src={`/${project.imageFile}`} alt="" width={384} height={192} />
+        <Image
+          src={project.imageFile}
+          loader={externaImageLoader}
+          alt=""
+          width={384}
+          height={192}
+        />
       </div>
 
       <div className={styles.details}>
