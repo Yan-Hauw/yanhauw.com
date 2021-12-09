@@ -1,26 +1,20 @@
 import React from "react";
 
+//images
+import Bottle from "../../public/Bottle.jpeg";
+
 // next
 import Image from "next/image";
 
 // styles
 import styles from "./index.module.css";
 
-const externaImageLoader = ({ src }: { src: string }) =>
-  `https://yanhauw.com/${src}`;
-
 const ProfileSection = () => {
   return (
     <div id="profilesection" className={styles.container}>
       <div className={styles.profileBox}>
         <div className={styles.photoFrame}>
-          <Image
-            src="Bottle.jpeg"
-            alt=""
-            loader={externaImageLoader}
-            height={78}
-            width={78}
-          />
+          <Image src={Bottle} alt="" height={78} width={78} />
         </div>
 
         <div className={styles.profileText}>
