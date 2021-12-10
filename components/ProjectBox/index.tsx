@@ -3,14 +3,11 @@ import React from "react";
 // types
 import { project } from "../../types/projects-section";
 
-// next
-import Image from "next/image";
+// // next
+// import Image from "next/image";
 
-// styles
-import styles from "./index.module.css";
-
-const externaImageLoader = ({ src }: { src: string }) =>
-  `https://yanhauw.com/${src}`;
+// const externaImageLoader = ({ src }: { src: string }) =>
+//   `https://yanhauw.com/${src}`;
 
 interface props {
   project: project;
@@ -18,36 +15,47 @@ interface props {
 
 const ProjectBox: React.FC<props> = ({ project }) => {
   return (
-    <div className={styles.projectBox}>
-      <div className={styles.projectCover}>
-        <Image
+    <div className="border-2 border-black rounded-xl overflow-hidden mb-2 w-96">
+      <div className="h-48 w-96">
+        {/* <Image
           src={project.imageFile}
           loader={externaImageLoader}
           alt=""
           width={384}
           height={192}
-        />
+        /> */}
       </div>
 
-      <div className={styles.details}>
-        <h3 className={styles.projectTitle}>{project.title}</h3>
+      <div className="px-4">
+        <h3 className="mt-2">{project.title}</h3>
 
-        <div className={styles.techStacks}>
+        <div className="flex">
           {project.stacks.map((stack: string, index: number) => (
-            <div className={styles.technology} key={index}>
+            <div
+              className="bg-blue-300 text-xs mr-1.5 px-2 py-1 rounded-xl"
+              key={index}
+            >
               {stack}
             </div>
           ))}
         </div>
 
-        <p className={styles.description}>{project.description}</p>
+        <p className="border-b-2 border-b-gray-300 py-4">
+          {project.description}
+        </p>
 
-        <div className={styles.links}>
-          <a href={project.sourceLink} className={styles.link}>
+        <div className="my-2 flex justify-center">
+          <a
+            href={project.sourceLink}
+            className="text-xl text-gray-300 px-1.5 hover:text-black hover:font-medium"
+          >
             Source
           </a>
 
-          <a href={project.demoLink} className={styles.link}>
+          <a
+            href={project.demoLink}
+            className="text-xl text-gray-300 px-1.5 hover:text-black hover:font-medium"
+          >
             Demo
           </a>
         </div>

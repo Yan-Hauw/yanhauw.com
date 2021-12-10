@@ -1,13 +1,10 @@
 import React from "react";
 
-// next
-import Image from "next/image";
+// // next
+// import Image from "next/image";
 
-// styles
-import styles from "./index.module.css";
-
-const externaImageLoader = ({ src }: { src: string }) =>
-  `https://yanhauw.com/${src}`;
+// const externaImageLoader = ({ src }: { src: string }) =>
+//   `https://yanhauw.com/${src}`;
 
 const ProfileSection = () => {
   return (

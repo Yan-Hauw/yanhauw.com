@@ -7,18 +7,15 @@ import ProjectBox from "../ProjectBox";
 // constants
 import { projects } from "../../constants/projects";
 
-// styles
-import styles from "./index.module.css";
-
 const ProjectsSection = () => {
   return (
     <>
-      <h1 id="projectssection" className={styles.header}>
+      <h1 id="projectssection" className="text-3xl m-24">
         Projects
       </h1>
 
-      <div className={styles.container}>
-        <div>
+      <div className="w-full">
+        <div className="mx-auto w-min">
           {projects.map((project: project, index: number) => (
             <ProjectBox project={project} key={index} />
           ))}
