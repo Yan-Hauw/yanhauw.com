@@ -3,14 +3,14 @@ import type { NextPage } from "next";
 
 // components
 import NextHead from "../components/NextHead";
-import NavBar from "../components/NavBar";
+import TableOfContents from "../components/TableOfContents";
 import ProfileSection from "../components/ProfileSection";
 import ProjectsSection from "../components/ProjectsSection";
 
 const Home: NextPage = () => {
   return (
     <>
-      <NavBar />
+      <TableOfContents />
 
       <NextHead />
 
