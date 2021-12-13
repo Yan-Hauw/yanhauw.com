@@ -10,7 +10,7 @@ import { projects } from "../../constants/projects";
 const ProjectsSection = () => {
   return (
     <>
-      <h2 id="projectssection" className="text-3xl m-24 scroll-mt-4">
+      <h2 id="projectssection" className="text-3xl ml-48 mb-6">
         Projects
       </h2>
 
