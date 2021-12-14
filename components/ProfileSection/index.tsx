@@ -1,5 +1,8 @@
 import React from "react";
 
+//components
+import Button from "../Button";
+
 // // next
 // import Image from "next/image";
 
@@ -8,11 +11,10 @@ import React from "react";
 
 const ProfileSection = () => {
   return (
-    <div
-      id="profilesection"
-      className="h-screen flex items-center justify-center"
-    >
-      <div className="border-gray-300 border-2 rounded-md h-24 w-80 flex p-1.5">
+    <div id="profilesection" className="h-screen">
+      <div className="h-2/6"></div>
+
+      <div className="border-gray-300 border-2 rounded-md h-24 w-80 flex p-1.5 mx-auto mb-12">
         <div className="h-20 w-20 bg-purple-600 rounded-full overflow-hidden">
           {/* <Image
             src="Bottle.jpeg"
@@ -29,6 +31,10 @@ const ProfileSection = () => {
 
           <p className="text-sm">Junior CS major at UCLA.</p>
         </div>
+      </div>
+
+      <div className="mx-auto bg-blue-500 w-20 rounded-xl">
+        <Button />
       </div>
     </div>
   );

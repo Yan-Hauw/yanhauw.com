@@ -1,0 +1,14 @@
+import React from "react";
+
+const Button = () => {
+  return (
+    <a
+      href=""
+      className="text-white font-medium h-12 flex items-center justify-center"
+    >
+      Resume
+    </a>
+  );
+};
+
+export default Button;
