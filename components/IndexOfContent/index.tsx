@@ -5,10 +5,10 @@ const IndexOfContent = (props: { children: any; active: boolean }) => {
     <div
       className={
         (props.active ? "font-medium " : "text-gray-500 ") +
-        "w-44 h-10 flex items-center justify-center"
+        "w-48 h-10 flex items-center justify-center"
       }
     >
-      <div className="text-center w-20 h-10 rounded-3xl flex items-center justify-center hover:bg-gray-200">
+      <div className="text-center w-28 h-10 rounded-3xl flex items-center justify-center hover:bg-gray-200">
         {props.children}
       </div>
     </div>

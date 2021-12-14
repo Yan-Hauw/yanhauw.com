@@ -9,7 +9,7 @@ import { projects } from "../../constants/projects";
 
 const ProjectsSection = () => {
   return (
-    <>
+    <div className="h-screen">
       <h2 id="projectssection" className="text-3xl ml-48 mb-6">
         Projects
       </h2>
@@ -21,7 +21,7 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

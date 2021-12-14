@@ -7,6 +7,7 @@ import TableOfContents from "../components/TableOfContents";
 import ProfileSection from "../components/ProfileSection";
 import ProjectsSection from "../components/ProjectsSection";
 import HotBar from "../components/HotBar";
+import ExperienceSection from "../components/ExperienceSection";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,8 @@ const Home: NextPage = () => {
       <ProfileSection />
 
       <ProjectsSection />
+
+      <ExperienceSection />
     </>
   );
 };

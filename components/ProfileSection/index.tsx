@@ -11,7 +11,7 @@ import Button from "../Button";
 
 const ProfileSection = () => {
   return (
-    <div id="profilesection" className="h-screen">
+    <div className="h-screen">
       <div className="h-2/6"></div>
 
       <div className="border-gray-300 border-2 rounded-md h-24 w-80 flex p-1.5 mx-auto mb-12">
