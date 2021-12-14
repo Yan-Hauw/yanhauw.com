@@ -21,10 +21,6 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-
-      <h2 id="home" className="text-3xl m-24 scroll-mt-4">
-        Home
-      </h2>
     </>
   );
 };

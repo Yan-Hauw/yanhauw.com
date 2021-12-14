@@ -6,11 +6,14 @@ import NextHead from "../components/NextHead";
 import TableOfContents from "../components/TableOfContents";
 import ProfileSection from "../components/ProfileSection";
 import ProjectsSection from "../components/ProjectsSection";
+import HotBar from "../components/HotBar";
 
 const Home: NextPage = () => {
   return (
     <>
       <TableOfContents />
+
+      <HotBar />
 
       <NextHead />
 
