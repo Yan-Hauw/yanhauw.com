@@ -12,7 +12,7 @@ import ContactSection from "../components/ContactSection";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="">
       <TableOfContents />
 
       <HotBar />
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <ExperienceSection />
 
       <ContactSection />
-    </>
+    </div>
   );
 };
 

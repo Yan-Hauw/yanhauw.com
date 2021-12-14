@@ -15,7 +15,7 @@ interface props {
 
 const ProjectBox: React.FC<props> = ({ project }) => {
   return (
-    <div className="border-2 border-black rounded-xl overflow-hidden mb-2 w-96">
+    <div className="rounded-xl overflow-hidden mb-2 w-96 shadow-lg">
       <div className="h-48 w-96">
         {/* <Image
           src={project.imageFile}

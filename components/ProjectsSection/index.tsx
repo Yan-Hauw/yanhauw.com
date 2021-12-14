@@ -11,7 +11,9 @@ import { projects } from "../../constants/projects";
 const ProjectsSection = () => {
   return (
     <div className="h-screen">
-      <SectionHeader id="projects">Projects</SectionHeader>
+      <SectionHeader id="projects" line>
+        Projects
+      </SectionHeader>
 
       <div className="w-full">
         <div className="mx-auto w-min">
