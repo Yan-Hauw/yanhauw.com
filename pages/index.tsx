@@ -8,6 +8,7 @@ import ProfileSection from "../components/ProfileSection";
 import ProjectsSection from "../components/ProjectsSection";
 import HotBar from "../components/HotBar";
 import ExperienceSection from "../components/ExperienceSection";
+import ContactSection from "../components/ContactSection";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,8 @@ const Home: NextPage = () => {
       <ProjectsSection />
 
       <ExperienceSection />
+
+      <ContactSection />
     </>
   );
 };
