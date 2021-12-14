@@ -1,15 +1,14 @@
 import React from "react";
 
+// components
+import SectionHeader from "../SectionHeader";
+
 const ExperienceSection = () => {
   return (
     <div>
-      <h2 className="opacity-0 cursor-default">Experience</h2>
-
-      <div id="experience" className="text-center text-4xl mb-8">
-        Work experience
-      </div>
-
-      <div className="mx-auto w-48 h-1 bg-black mb-12"></div>
+      <SectionHeader id="experience" line>
+        Work Experience
+      </SectionHeader>
 
       <div className="text-center text-2xl font-bold mb-2">
         Frontend Web Developer Intern
