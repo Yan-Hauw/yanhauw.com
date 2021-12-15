@@ -3,8 +3,8 @@ import React from "react";
 // types
 import { project } from "../../types/projects-section";
 
-// // next
-// import Image from "next/image";
+// next
+import Image from "next/image";
 
 // const externaImageLoader = ({ src }: { src: string }) =>
 //   `https://yanhauw.com/${src}`;
@@ -17,13 +17,7 @@ const ProjectBox: React.FC<props> = ({ project }) => {
   return (
     <div className="rounded-xl overflow-hidden mb-2 w-96 shadow-lg">
       <div className="h-48 w-96">
-        {/* <Image
-          src={project.imageFile}
-          loader={externaImageLoader}
-          alt=""
-          width={384}
-          height={192}
-        /> */}
+        <Image src="/Bottle.jpeg" alt="" width={384} height={192} />
       </div>
 
       <div className="px-4">
