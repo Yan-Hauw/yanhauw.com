@@ -14,7 +14,7 @@ const ExperienceSection = () => {
         Frontend Web Developer Intern
       </div>
 
-      <ul className="flex flex-wrap list-disc w-max mx-auto mb-8">
+      <ul className="flex flex-wrap justify-center list-disc sm:w-max mx-auto mb-8">
         <li className="mx-4">REACT</li>
 
         <li className="mx-4">TYPESCRIPT</li>
