@@ -162,7 +162,10 @@ const TableOfContents = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav aria-label="Table of contents" className="fixed left-0 top-1/4">
+    <nav
+      aria-label="Table of contents"
+      className="fixed left-0 top-1/4 w-2/12 sm:block hidden"
+    >
       <Headings headings={nestedHeadings} activeId={activeId} />
     </nav>
   );

@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       </SectionHeader>
 
       <div className="w-full">
-        <div className="mx-auto w-min">
+        <div className="w-11/12 sm:w-8/12 mx-auto flex flex-wrap justify-center gap-3">
           {projects.map((project: project, index: number) => (
             <ProjectBox project={project} key={index} />
           ))}

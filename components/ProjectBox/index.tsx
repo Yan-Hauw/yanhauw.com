@@ -15,8 +15,8 @@ interface props {
 
 const ProjectBox: React.FC<props> = ({ project }) => {
   return (
-    <div className="rounded-xl overflow-hidden mb-2 w-96 shadow-lg">
-      <div className="h-48 w-96">
+    <div className="rounded-xl overflow-hidden mb-2 w-96 shadow-lg max-w-sm">
+      <div className="h-48 max-w-sm">
         <Image src="/Bottle.jpeg" alt="" width={384} height={192} />
       </div>
 
