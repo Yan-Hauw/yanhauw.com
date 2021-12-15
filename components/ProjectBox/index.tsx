@@ -56,12 +56,14 @@ const ProjectBox: React.FC<props> = ({ project }) => {
               Source
             </a>
 
-            <a
-              href={project.demoLink}
-              className="text-xl text-gray-300 px-1.5 hover:text-2xl hover:text-black"
-            >
-              Demo
-            </a>
+            {project.demoLink && (
+              <a
+                href={project.demoLink}
+                className="text-xl text-gray-300 px-1.5 hover:text-2xl hover:text-black"
+              >
+                Demo
+              </a>
+            )}
           </div>
         </div>
       </div>

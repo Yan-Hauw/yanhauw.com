@@ -4,5 +4,5 @@ export type project = {
   stacks: string[];
   description: string;
   sourceLink: string;
-  demoLink: string;
+  demoLink?: string;
 };
