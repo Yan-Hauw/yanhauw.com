@@ -9,20 +9,21 @@ import Image from "next/image";
 // // images
 // import websitePhoto from "../../public/website-photo.jpeg";
 
-// const externaImageLoader = ({ src }: { src: string }) =>
-//   `https://yanhauw.com/${src}`;
+const externaImageLoader = ({ src }: { src: string }) =>
+  `https://yanhauw.com${src}`;
 
 const ProfileSection = () => {
   return (
     <div className="h-screen">
-      <div className="h-2/6"></div>
+      <div className="h-1/6 sm:h-1/4" />
 
       <div className="w-8/12 sm:w-96 border-gray-300 border rounded-md sm:flex p-5 mx-auto mb-12">
         <div className="h-32 w-32 rounded-full overflow-hidden shrink-0 block">
           <Image
             src="/website-photo.jpeg"
             alt=""
-            layout="fixed"
+            loader={externaImageLoader}
+            layout="responsive"
             height={128}
             width={128}
           />

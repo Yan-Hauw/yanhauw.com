@@ -6,8 +6,8 @@ import { project } from "../../types/projects-section";
 // next
 import Image from "next/image";
 
-// const externaImageLoader = ({ src }: { src: string }) =>
-//   `https://yanhauw.com/${src}`;
+const externaImageLoader = ({ src }: { src: string }) =>
+  `https://yanhauw.com${src}`;
 
 interface props {
   project: project;
@@ -17,8 +17,17 @@ const ProjectBox: React.FC<props> = ({ project }) => {
   return (
     <div className="rounded-xl overflow-hidden mb-2 w-96 shadow-lg max-w-sm">
       <div className="h-48 max-w-sm">
-        <Image src="/Bottle.jpeg" alt="" width={384} height={192} />
+        <Image
+          src={project.imageFile}
+          loader={externaImageLoader}
+          alt=""
+          layout="responsive"
+          width={384}
+          height={192}
+        />
       </div>
+
+      <div className="h-px bg-gray-200" />
 
       <div className="px-4">
         <h3 className="mt-2">{project.title}</h3>

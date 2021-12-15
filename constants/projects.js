@@ -1,6 +1,6 @@
 export const projects = [
   {
-    imageFile: "Bottle.jpeg",
+    imageFile: "/bruinwalk-photo.png",
     title: "Bruinwalk Scraper",
     stacks: ["Python", "MySQL"],
     description:
@@ -9,7 +9,7 @@ export const projects = [
     demoLink: "https://github.com/Yan-Hauw",
   },
   {
-    imageFile: "Bottle.jpeg",
+    imageFile: "/portfolio-photo.png",
     title: "yanhauw.com",
     stacks: ["TypeScript", "CSS"],
     description: "My personal website",
