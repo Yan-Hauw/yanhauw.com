@@ -23,7 +23,11 @@ const Home: NextPage = () => {
 
       <ProjectsSection />
 
+      <div className="w-full sm:h-48" />
+
       <ExperienceSection />
+
+      <div className="w-full sm:h-12" />
 
       <ContactSection />
     </div>

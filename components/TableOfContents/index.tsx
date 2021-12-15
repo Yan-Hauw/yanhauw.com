@@ -146,7 +146,7 @@ const useIntersectionObserver = (setActiveId: any) => {
     };
 
     const observer = new IntersectionObserver(callback, {
-      rootMargin: "20% 0px -20% 0px",
+      rootMargin: "0px 0px -20% 0px",
     });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
