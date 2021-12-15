@@ -31,7 +31,9 @@ const ProjectBox: React.FC<props> = ({ project }) => {
         <div className="h-px bg-gray-200" />
 
         <div className="px-4 w-auto">
-          <h3 className="mt-2 font-bold w-auto">{project.title}</h3>
+          <h3 className="mt-2 mb-2 text-xl font-bold w-auto">
+            {project.title}
+          </h3>
 
           <div className="flex w-auto">
             {project.stacks.map((stack: string, index: number) => (
