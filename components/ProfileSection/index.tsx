@@ -35,13 +35,13 @@ const ProfileSection = () => {
           </h1>
 
           <p className="text-sm">
-            Junior CS major at UCLA. Interested in building software with Python
-            and JavaScript. Looking for a Summer 2022 internship.
+            3rd year CS major at UCLA. Passionate about software development.
+            Previous experience in Python, React and JavaScript.
           </p>
         </div>
       </div>
 
-      <div className="mx-auto bg-blue-500 w-20 rounded-xl">
+      <div className="mx-auto bg-blue-500 hover:bg-gray-400 w-20 rounded-xl">
         <Button />
       </div>
     </div>
