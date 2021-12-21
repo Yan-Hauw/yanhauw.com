@@ -15,9 +15,9 @@ const externaImageLoader = ({ src }: { src: string }) =>
 const ProfileSection = () => {
   return (
     <div className="h-screen">
-      <div className="h-1/6 sm:h-1/4" />
+      <div className="h-1/6 sm:h-1/4 " />
 
-      <div className="w-8/12 sm:w-96 border-gray-300 border rounded-md sm:flex p-5 mx-auto mb-12">
+      <div className="w-8/12 sm:w-96 border-gray-300 border rounded-md sm:flex p-5 mx-auto mb-12 bg-white">
         <div className="h-32 w-32 rounded-full overflow-hidden shrink-0 block mx-auto">
           <Image
             src="/website-photo.jpeg"

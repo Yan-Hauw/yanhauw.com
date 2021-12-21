@@ -10,7 +10,9 @@ import { projects } from "../../constants/projects";
 
 const ProjectsSection = () => {
   return (
-    <div className="">
+    <div className="bg-gray-100">
+      <div className="h-24" />
+
       <SectionHeader id="projects" line>
         Projects
       </SectionHeader>
@@ -22,6 +24,8 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
+
+      <div className="h-24" />
     </div>
   );
 };
