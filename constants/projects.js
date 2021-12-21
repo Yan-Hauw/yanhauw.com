@@ -17,6 +17,15 @@ export const projects = [
     demoLink: "https://yanhauw.com",
   },
   {
+    imageFile: "/portfolio-photo.png",
+    title: "Blog App",
+    stacks: ["Python", "Django", "React"],
+    description:
+      "In a 2-person team, we built an app that allows users to make blog posts to a database and view the blog posts. I built an API for managing blog posts in the database and another API for user authentication",
+    sourceLink: "https://github.com/Yan-Hauw/Blog-App-Api",
+    demoLink: "https://yanhauw.com",
+  },
+  {
     imageFile: "/uchat-photo.png",
     title: "UChat",
     stacks: ["JavaScript", "React", "Express", "MongoDB", "CSS"],
