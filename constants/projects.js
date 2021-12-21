@@ -4,7 +4,7 @@ export const projects = [
     title: "Bruinwalk Keywords Database",
     stacks: ["Python", "MySQL"],
     description:
-      "A web scraper for scraping bruinwalk.com. Contributed to the web platforms of Wizlah, a start-up that connects the suppliers and consumers of furniture.",
+      "A Python web scraper for scraping the official UCLA class reviews site. It finds keywords matches in the reviews made for all classes of a college department and records the matches found in a MySQL database.",
     sourceLink: "https://github.com/Yan-Hauw/Bruinwalk-scraper-and-analyzer",
   },
   {

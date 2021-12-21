@@ -25,9 +25,10 @@ const ExperienceSection = () => {
       </ul>
 
       <p className="text-center w-9/12 md:w-7/12 xl:w-1/3  mx-auto mb-8">
-        I learnt TypeScript and React function components to contribute to an
-        e-commerce platform and an administrative platform for buying and
-        selling furniture. I also built a frontend movie database web app.
+        I learnt TypeScript and React function components to contribute to the
+        frontend of an e-commerce platform and an administrative platform for
+        buying and selling furniture. During the internship, I also built a
+        frontend movie database web app.
       </p>
     </div>
   );
